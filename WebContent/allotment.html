@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Allotment by hr-head</title>
+<script>
+	window.onload = function() {
+		// Get the ticket ID from the URL query parameters
+		var urlParams = new URLSearchParams(window.location.search);
+		var ticketId = urlParams.get('id');
+		console.log("Ticket ID: " + ticketId); //dislay
+	};
+</script>
+</head>
+<body bgcolor="#F6DDD8">
+	<div style="text-align: center;">
+		<form name="allotment_form" action="allotment" method="post">
+			<h1>Allocation</h1>
+			<label>Date</label> <input type="date" name="alloc_date"> <br>
+			<br>
+			<label>HR</label><select name="alloc_name"><option>Neenu</option>
+				<option>Annu</option>
+				<option>Vannu</option>
+				<option>Raj</option></select> <input type="submit" value="save">
+		</form>
+	</div>
+
+
+</body>
+</html>
